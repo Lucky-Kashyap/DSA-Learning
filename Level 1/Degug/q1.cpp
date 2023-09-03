@@ -9,7 +9,7 @@ int main() {
     if('a'<=c && c<= 'z'){
         cout<<0;
     }
-	else if('A'<=c || c<= 'Z'){
+	else if('A'<=c && c<= 'Z'){
         cout<<1;
     }
     else{
