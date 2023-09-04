@@ -27,10 +27,29 @@ int main(){
 
 // cout<<res<<endl;
 
-float num1 = 67.8;
-char res = (char)num1;
+// float num1 = 67.8;
+// char res = (char)num1;
 
-cout<<res<<endl;
+// cout<<res<<endl;
+
+// int to float
+
+// int a =10;
+// int b = 10.6;
+
+// float res =  a/((float)b);
+
+
+//    cout<<res;
+
+int a =10;
+int b = 8.0;
+
+float res =  a/((float)b);
+
+
+   cout<<res<<endl;
+
 
 
 }
