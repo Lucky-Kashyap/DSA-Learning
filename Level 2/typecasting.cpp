@@ -17,5 +17,12 @@ int main(){
    
    cout<<incre;
 
+   int a = 112;
+
+   char convert = a;
+
+   cout<<convert<<endl;
+   cout<<a<<endl;
+
 
 }
