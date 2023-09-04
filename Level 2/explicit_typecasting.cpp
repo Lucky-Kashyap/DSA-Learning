@@ -45,7 +45,8 @@ int main(){
 int a =10;
 int b = 8.0;
 
-float res =  a/((float)b);
+// float res =  a/((float)b);
+int res = (float)a/b;
 
 
    cout<<res<<endl;
