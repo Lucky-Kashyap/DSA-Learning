@@ -10,5 +10,12 @@ int main(){
    
    cout<<res<<endl;
 
+    // char to int
+   char ch = 'L';
+   
+   int incre = ch+1;
+   
+   cout<<incre;
+
 
 }
