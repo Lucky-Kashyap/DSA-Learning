@@ -5,12 +5,12 @@ using namespace std;
 
 int main()
 {
-    int a = 2;
+    // int a = 2;
+    int a = -150;
     
     
     
-    
-    cout<<(a>>1)<<endl;
+    cout<<(a>>1)<<endl;  
     
   
 
