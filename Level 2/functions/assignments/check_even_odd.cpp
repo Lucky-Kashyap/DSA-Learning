@@ -3,14 +3,27 @@
 
 using namespace std;
 
+// bool even(int num){
+//     if(num%2==0){
+//         return true;
+//     }
+//     else{
+//         return false;
+//     }
+// }
+
+
+// using bitwise 
+
 bool even(int num){
-    if(num%2==0){
+    if((num&1)==0){
         return true;
     }
     else{
         return false;
     }
 }
+
 
 
 int main()
