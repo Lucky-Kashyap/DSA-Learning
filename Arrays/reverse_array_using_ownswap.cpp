@@ -21,11 +21,11 @@ void reverseArray(int arr[], int size)
             // arr[left] = arr[right];
             // arr[right] = temp;
 
-// without using third variable
+            // without using third variable
 
-              arr[left] = arr[left] + arr[right];
-         arr[right] = arr[left] - arr[right];
-         arr[left] = arr[left] - arr[right];
+            arr[left] = arr[left] + arr[right];
+            arr[right] = arr[left] - arr[right];
+            arr[left] = arr[left] - arr[right];
 
             cout << arr[left] << " " << arr[right] << " ";
 
