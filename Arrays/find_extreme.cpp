@@ -21,8 +21,17 @@ void reverseArray(int arr[], int size)
     // }
 
     while (left <= right)
+
     {
-        cout << arr[left] << " " << arr[right] << " ";
+        if (left == right)
+        {
+            cout << arr[left] << " ";
+        }
+        else
+        {
+            cout << arr[left] << " " << arr[right] << " ";
+        }
+        // cout << arr[left] << " " << arr[right] << " ";
         left++;
         right--;
     }
@@ -43,9 +52,10 @@ void printArray(int arr[], int size)
 int main()
 {
 
-    int arr[8] = {76, 9, -9, 34, 65, 78, 23, 54};
+    // int arr[8] = {76, 9, -9, 34, 65, 78, 23, 54};
+    int arr[9] = {76, 9, -9, 34, 65, 78, 23, 54, 3};
 
-    int size = 8;
+    int size = 9;
 
     cout << "Before Array : " << endl;
     printArray(arr, size);
