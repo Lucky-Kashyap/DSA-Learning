@@ -13,13 +13,22 @@ int main()
     // }
     
 
-    int arr[] = {2,3,49,8,4,56,38};
+    // int arr[] = {2,3,49,8,4,56,38};
     
-    int sizeOfArray = sizeof(arr)/sizeof(arr[0]);
+    // int sizeOfArray = sizeof(arr)/sizeof(arr[0]);
     
-    for(int i=0;i<sizeOfArray;i++){
-        cout<<arr[i]<<endl;
-    }
+    // for(int i=0;i<sizeOfArray;i++){
+    //     cout<<arr[i]<<endl;
+    // }
+
+
+    //  int arr[3] = {2,3,49,8,4,56,38};
+
+     // create error
+
+     
+
+
     
 
 
