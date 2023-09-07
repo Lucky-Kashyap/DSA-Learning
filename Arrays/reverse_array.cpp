@@ -4,11 +4,26 @@ using namespace std;
 void reverseArray(int arr[], int size)
 {
 
-    for (int i = size - 1; i >= 0; i--)
-    {
-        cout << arr[i] << " ";
+    // for (int i = size - 1; i >= 0; i--)
+    // {
+    //     cout << arr[i] << " ";
+    // }
+    // cout << endl;
+
+    // optimize way
+
+    int left=0;
+    int right=size-1;
+    
+    while(left<=right){
+        swap(arr[left],arr[right]);
+        left++;
+        right--;
     }
-    cout << endl;
+    
+    for(int i=0;i<size;i++){
+        cout<<arr[i]<<" ";
+    }
 }
 
 void printArray(int arr[], int size)
