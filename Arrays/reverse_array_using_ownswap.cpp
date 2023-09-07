@@ -6,7 +6,7 @@ void reverseArray(int arr[], int size)
 
     int left = 0;
     int right = size - 1;
-    int temp = 0;
+    // int temp = 0;
 
     while (left <= right)
     {
@@ -16,9 +16,16 @@ void reverseArray(int arr[], int size)
         }
         else
         {
-            temp = arr[left];
-            arr[left] = arr[right];
-            arr[right] = temp;
+
+            // temp = arr[left];
+            // arr[left] = arr[right];
+            // arr[right] = temp;
+
+// without using third variable
+
+              arr[left] = arr[left] + arr[right];
+         arr[right] = arr[left] - arr[right];
+         arr[left] = arr[left] - arr[right];
 
             cout << arr[left] << " " << arr[right] << " ";
 
