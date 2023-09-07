@@ -26,7 +26,24 @@ int main()
 
      // create error
 
-     
+
+
+     // initialize array
+
+     int arr[5];
+    
+    arr[1]=23;
+    
+    // cout<<arr<<endl;
+    
+    for(int i=0;i<5;i++){
+        cout<<arr[i]<<endl;
+    }
+
+    // arr[0]=0 
+    //arr[2]=0
+    //arr[3]=0
+    //arr[4]=0
 
 
     
