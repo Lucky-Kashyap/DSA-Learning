@@ -12,7 +12,7 @@ void countZeroOne(int arr[], int size)
         {
             countZero++;
         }
-        else
+        if(arr[i]==1)
         {
             countOne++;
         }
