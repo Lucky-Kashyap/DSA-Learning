@@ -12,17 +12,25 @@ void reverseArray(int arr[], int size)
 
     // optimize way
 
-    int left=0;
-    int right=size-1;
-    
-    while(left<=right){
+    int left = 0;
+    int right = size - 1;
+
+    // while (left <= right)
+    // {
+    //     swap(arr[left], arr[right]);
+    //     left++;
+    //     right--;
+    // }
+
+    for(int i=left;i<=right;i++){
         swap(arr[left],arr[right]);
         left++;
         right--;
     }
-    
-    for(int i=0;i<size;i++){
-        cout<<arr[i]<<" ";
+
+    for (int i = 0; i < size; i++)
+    {
+        cout << arr[i] << " ";
     }
 }
 
