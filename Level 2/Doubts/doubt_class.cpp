@@ -22,11 +22,15 @@ int main()
     // cout << (a << 1) << endl;
     // cout << (a >> 1) << endl;
 
-    char ch = 65;
-    char c = 'A';
+    // char ch = 65;
+    // char c = 'A';
 
-    cout << ch << endl;
-    cout << c << endl;
+    // cout << ch << endl;
+    // cout << c << endl;
+
+    int a = 10;
+
+    cout << ++a + a++ << endl;
 
     return 0;
 }
