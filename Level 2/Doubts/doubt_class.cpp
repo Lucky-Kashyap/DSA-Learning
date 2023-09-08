@@ -28,9 +28,18 @@ int main()
     // cout << ch << endl;
     // cout << c << endl;
 
-    int a = 10;
+    // int a = 10;
 
-    cout << ++a + a++ << endl;
+    // cout << ++a + a++ << endl;
+
+    // bool a = 1;
+
+    // cout << (~a) << endl;
+
+    bool a = 1;
+    bool b = ~a;
+
+    cout << b << endl;
 
     return 0;
 }
