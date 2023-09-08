@@ -17,10 +17,16 @@ int main()
     //   cout<<c<<endl;
     //   cout<<ch<<endl;
 
-    int a = -10;
+    // int a = -10;
 
-    cout << (a << 1) << endl;
-    cout << (a >> 1) << endl;
+    // cout << (a << 1) << endl;
+    // cout << (a >> 1) << endl;
+
+    char ch = 65;
+    char c = 'A';
+
+    cout << ch << endl;
+    cout << c << endl;
 
     return 0;
 }
