@@ -36,16 +36,32 @@ void solve(int arr[], int n)
         }
     }
 
-    int i;
+    // int i;
 
-    for (i = 0; i < count; i++)
+    // for (i = 0; i < count; i++)
+    // {
+    //     arr[i] = 0;
+    // }
+    // for (int j = i; j < n; j++)
+    // {
+    //     arr[j] = 1;
+    // }
+
+    // easy way
+
+    int index = 0;
+
+    while (count--)
     {
-        arr[i] = 0;
+        arr[index] = 0;
+        index++;
     }
-    for (int j = i; j < n; j++)
+    while (count1--)
     {
-        arr[j] = 1;
+        arr[index] = 1;
+        index++;
     }
+
     for (int k = 0; k < n; k++)
     {
         cout << arr[k] << " ";
