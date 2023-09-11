@@ -28,8 +28,13 @@ int main()
     arr.push_back('B');
     arr.push_back('C');
 
-    cout << "FRont ELement : " << arr[0] << endl;
-    cout << "Ending ELement : " << arr[arr.size() - 1] << endl;
+    // another way
+
+    cout << "FRont ELement : " << arr.front() << endl;
+    cout << "Ending ELement : " << arr.back() << endl;
+
+    // cout << "FRont ELement : " << arr[0] << endl;
+    // cout << "Ending ELement : " << arr[arr.size() - 1] << endl;
 
     printVector(arr);
 
