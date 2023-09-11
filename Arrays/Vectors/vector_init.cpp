@@ -19,9 +19,15 @@ int main()
 {
     // vector<int>v;
     // vector<int>arr(5);
+    // vector<int> arr(5, 100);
+
+    // printVector(arr);
+
     vector<int> arr(5, 100);
 
-    printVector(arr);
+    vector<int> arr2 = {1, 2, 3, 4, 5, 10};
 
+    printVector(arr);
+    printVector(arr2);
     return 0;
 }
