@@ -15,6 +15,18 @@ void printVector(vector<char> v)
     cout << endl;
 }
 
+void printVector2(vector<char> v)
+{
+    int size = v.size();
+
+    cout << "Printing The vector" << endl;
+    for (auto it : v)
+    {
+        cout << it << " ";
+    }
+    cout << endl;
+}
+
 int main()
 {
 
@@ -37,6 +49,7 @@ int main()
     // cout << "Ending ELement : " << arr[arr.size() - 1] << endl;
 
     printVector(arr);
+    printVector2(arr);
 
     return 0;
 }
