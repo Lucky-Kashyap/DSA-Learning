@@ -34,13 +34,9 @@ int main()
 
     // Copy vector data
 
-     vector<int>arr2{1,2,3,4,5,10};
-    vector<int>arr3(arr2);
-   
+    vector<int> arr2{1, 2, 3, 4, 5, 10};
+    vector<int> arr3(arr2);
 
-    
-    
-  
     printVector(arr3);
     printVector(arr2);
 
