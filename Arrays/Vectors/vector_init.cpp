@@ -23,11 +23,26 @@ int main()
 
     // printVector(arr);
 
-    vector<int> arr(5, 100);
+    // vector<int> arr(5, 100);
 
-    vector<int> arr2 = {1, 2, 3, 4, 5, 10};
+    // vector<int> arr2 = {1, 2, 3, 4, 5, 10};
 
-    printVector(arr);
+    // printVector(arr);
+
+    // vector<int> arr2{1, 2, 3, 4, 5, 10};
+    // printVector(arr2);
+
+    // Copy vector data
+
+     vector<int>arr2{1,2,3,4,5,10};
+    vector<int>arr3(arr2);
+   
+
+    
+    
+  
+    printVector(arr3);
     printVector(arr2);
+
     return 0;
 }
