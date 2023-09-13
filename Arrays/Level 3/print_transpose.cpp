@@ -32,7 +32,6 @@
 //     return 0;
 // }
 
-
 #include <iostream>
 #include <climits>
 
@@ -43,18 +42,24 @@ void printTranspose(int arr[][3], int row, int col)
     for (int i = 0; i < row; i++)
     {
         for (int j = i; j < col; j++)
+
         {
-            swap(arr[i][j], arr[j][i]);
+             int temp=arr[i][j];
+            arr[i][j]= arr[j][i];
+            arr[j][i]= temp;
+            // swap(arr[i][j], arr[j][i]);
             // cout << arr[i][j] << " ";
         }
         // cout << endl;
     }
-    
-     for(int i=0;i<row;i++){
-        for(int j=0;j<col;j++){
-            cout<<arr[i][j]<<" ";
+
+    for (int i = 0; i < row; i++)
+    {
+        for (int j = 0; j < col; j++)
+        {
+            cout << arr[i][j] << " ";
         }
-        cout<<endl;
+        cout << endl;
     }
 }
 
@@ -70,7 +75,7 @@ int main()
     int col = 3;
 
     printTranspose(arr, row, col);
-    
+
     // for(int i=0;i<row;i++){
     //     for(int j=0;j<col;j++){
     //         cout<<arr[i][j]<<" ";
@@ -80,4 +85,3 @@ int main()
 
     return 0;
 }
-
