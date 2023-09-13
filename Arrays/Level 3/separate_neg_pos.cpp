@@ -5,21 +5,32 @@ using namespace std;
 
 void separateNumber(int arr[], int n)
 {
-    int left = 0;
-    int right = n - 1;
+    // int left = 0;
+    // int right = n - 1;
 
-    while (left < right)
+    // while (left < right)
+    // {
+    //     if (arr[left] < arr[right])
+    //     {
+    //         swap(arr[left], arr[right]);
+    //         // right--;
+    //         left++;
+    //     }
+    //     else
+    //     {
+    //         // left++;
+    //         right--;
+    //     }
+    // }
+
+    int j = 0;
+
+    for (int i = 0; i < n; i++)
     {
-        if (arr[left] < arr[right])
+        if (arr[i] < 0)
         {
-            swap(arr[left], arr[right]);
-            // right--;
-            left++;
-        }
-        else
-        {
-            // left++;
-            right--;
+            swap(arr[i], arr[j]);
+            j++;
         }
     }
 
