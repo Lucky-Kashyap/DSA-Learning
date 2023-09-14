@@ -13,21 +13,36 @@ bool binarySearch(vector<int> arr, int target)
 
     while (start <= end)
     {
-        mid = (start + end) / 2;
-
         if (arr[mid] == target)
         {
             flag = true;
             return mid;
         }
-        if (arr[mid] < target)
+        else if (arr[mid] < target)
         {
             start = mid + 1;
         }
-        if (arr[mid] > target)
+        else if (arr[mid] > target)
         {
             end = mid - 1;
         }
+        mid = (start + end) / 2;
+        // {
+        //     mid = (start + end) / 2;
+
+        //     if (arr[mid] == target)
+        //     {
+        //         flag = true;
+        //         return mid;
+        //     }
+        //     if (arr[mid] < target)
+        //     {
+        //         start = mid + 1;
+        //     }
+        //     if (arr[mid] > target)
+        //     {
+        //         end = mid - 1;
+        //     }
     }
 
     // for(int i=0;i<end;i++){
