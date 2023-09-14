@@ -11,7 +11,7 @@ bool binarySearch(vector<int> arr, int target)
     // cout<<end;
     int mid = (start + end) / 2;
 
-    while (start <= end)
+    // while (start <= end)
     {
         if (arr[mid] == target)
         {
@@ -50,6 +50,25 @@ bool binarySearch(vector<int> arr, int target)
 
     //     }
     // }
+
+    for (int i = start; i < end; i++)
+    {
+
+        if (arr[mid] == target)
+        {
+            flag = true;
+            return mid;
+        }
+        else if (arr[mid] < target)
+        {
+            start = mid + 1;
+        }
+        else if (arr[mid] > target)
+        {
+            end = mid - 1;
+        }
+        mid = (start + end) / 2;
+    }
 
     return flag;
 }
