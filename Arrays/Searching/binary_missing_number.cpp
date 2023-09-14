@@ -26,6 +26,10 @@ int binarySearch(vector<int> arr)
         }
         mid = start + (end - start) / 2;
     }
+
+    //  if(ans+1==0){
+    //       return arr.size()+1;
+    //   }
     return ans + 1;
 }
 
