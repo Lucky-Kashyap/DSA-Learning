@@ -52,7 +52,8 @@ int main()
 
     vector<int> nums{1, 7, 3, 6, 5, 6};
 
-    cout << "Pivot Index : " << prefixSumApproach(nums) << endl;
+    // cout << "Pivot Index : " << prefixSumApproach(nums) << endl;
+    cout << "Pivot Index : " << bruteforce(nums) << endl;
 
     // int pivotIndex(vector<int>& nums) {
 
