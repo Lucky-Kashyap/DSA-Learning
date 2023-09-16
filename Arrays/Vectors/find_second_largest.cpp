@@ -25,7 +25,8 @@ int findSecondLargest(const std::vector<int> &arr)
 
 int main()
 {
-    std::vector<int> arr = {12, 4, 9, 7, 15, 6};
+    // std::vector<int> arr = {12, 4, 9, 7, 15, 6};
+    std::vector<int> arr = {12, 4,10,14, 9, 7, 15, 6};
 
     int secondLargest = findSecondLargest(arr);
 
