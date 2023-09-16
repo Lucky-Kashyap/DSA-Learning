@@ -7,12 +7,42 @@ using namespace std;
 void missingElement(int arr[], int n)
 {
 
-    for (int i = 0; i < n; i++)
+    // for (int i = 0; i < n; i++)
+    // {
+    //     int index = abs(arr[i]);
+    //     if (arr[index - 1] > 0)
+    //     {
+    //         arr[index - 1] *= -1;
+    //     }
+    // }
+
+    // for (int i = 0; i < n; i++)
+    // {
+    //     cout << arr[i] << " ";
+    // }
+    // for (int i = 0; i < n; i++)
+    // {
+    //     if (arr[i] > 0)
+    //     {
+    //         cout << i + 1 << " " << endl;
+    //     }
+    // }
+
+    // using sorting and swapping method
+
+    int i = 0;
+
+    while (i < n)
     {
-        int index = abs(arr[i]);
-        if (arr[index - 1] > 0)
+        int index = arr[i] - 1;
+
+        if (arr[i] != arr[index])
         {
-            arr[index - 1] *= -1;
+            swap(arr[i], arr[index]);
+        }
+        else
+        {
+            i++;
         }
     }
 
@@ -22,9 +52,9 @@ void missingElement(int arr[], int n)
     }
     for (int i = 0; i < n; i++)
     {
-        if (arr[i] > 0)
+        if (arr[i] != i + 1)
         {
-            cout << i + 1 << " " << endl;
+            cout << "Missing element " << i + 1 << endl;
         }
     }
 }
