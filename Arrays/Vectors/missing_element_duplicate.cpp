@@ -20,6 +20,13 @@ void missingElement(int arr[], int n)
     {
         cout << arr[i] << " ";
     }
+    for (int i = 0; i < n; i++)
+    {
+        if (arr[i] > 0)
+        {
+            cout << i + 1 << " " << endl;
+        }
+    }
 }
 
 int main()
