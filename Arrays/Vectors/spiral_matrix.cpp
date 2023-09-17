@@ -52,13 +52,22 @@ vector<int> spiralOrder(vector<vector<int>> &matrix)
 int main()
 {
     // vector<vector<int>> matrix{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
-     vector<vector<int>>matrix{{1,2,3,4},{5,6,7,8},{9,10,11,12}};
+    vector<vector<int>> matrix{{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}};
 
     vector<int> res = spiralOrder(matrix);
 
     //     for(int item : res){
     //         cout<<item<<" ";
     //     }
+
+    for (int i = 0; i < res.size(); i++)
+    {
+        cout << res[i] << " ";
+        // for(int j=0;j<res[0].size();j++){
+        //     cout<<res[i][j]<<" ";
+        // }
+        // cout<<endl;
+    }
 
     // // [1,2,3,6,9,8,7,4,5]
     return 0;
