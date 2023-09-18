@@ -5,6 +5,7 @@ using namespace std;
 
 int main()
 {
+
     // int a = 12;
     // int b = 15;
 
@@ -34,7 +35,7 @@ int main()
     // a = a ^ b;
     // b = a ^ b;
     // a = a ^ b;
-
+    cout << "Many ways to swap two numbers " << endl;
     a = a * b;
     b = a / b;
     a = a / b;
