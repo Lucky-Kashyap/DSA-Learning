@@ -27,9 +27,13 @@ int main()
     // a = b;
     // b = temp;
 
-    a = a + b;
-    b = a - b;
-    a = a - b;
+    // a = a + b;
+    // b = a - b;
+    // a = a - b;
+
+    a=a^b;
+   b=a^b;
+   a=a^b;
 
     cout << "Swap number : " << a << "          " << b << endl;
     // cout<<a<<"          "<<b<<endl;
