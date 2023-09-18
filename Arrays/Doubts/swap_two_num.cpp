@@ -23,9 +23,13 @@ int main()
     cin >> b;
 
     cout << "Before swapping number : " << a << "            " << b << endl;
-    int temp = a;
-    a = b;
-    b = temp;
+    // int temp = a;
+    // a = b;
+    // b = temp;
+
+    a = a + b;
+    b = a - b;
+    a = a - b;
 
     cout << "Swap number : " << a << "          " << b << endl;
     // cout<<a<<"          "<<b<<endl;
