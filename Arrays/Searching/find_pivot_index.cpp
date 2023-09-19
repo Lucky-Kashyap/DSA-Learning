@@ -39,6 +39,26 @@ int findPivotIndex(vector<int> &nums)
     return -1;
 }
 
+
+ int binarySearch(vector<int> & nums,int s,int e,int target){
+        int mid = s + (e - s)/2;
+
+        while(s<=e){
+            if(nums[mid] == target){
+                return mid;
+            }
+            if(target>nums[mid]){
+                s=mid+1;
+            }
+            else{
+                e = mid - 1;
+            }
+
+            mid = s + (e -s )/2;
+        }
+
+        return -1;
+    }
 int main()
 {
     vector<int> arr;
