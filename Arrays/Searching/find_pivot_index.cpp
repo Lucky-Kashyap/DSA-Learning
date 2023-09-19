@@ -16,11 +16,11 @@ int findPivotIndex(vector<int> &nums)
             return s;
         }
 
-        if (nums[mid] > nums[mid + 1])
+        if (mid+1<n && nums[mid] > nums[mid + 1])
         {
             return mid;
         }
-        else if (nums[mid] < nums[mid - 1])
+        else if (mid-1 >=0 && nums[mid] < nums[mid - 1])
         {
             return mid - 1;
         }
@@ -86,7 +86,7 @@ int main()
     int n = nums.size();
     int ans = -1;
 
-    if (target > nums[0] && target <= nums[pivotIndex])
+    if (target >= nums[0] && target <= nums[pivotIndex])
     {
         ans = binarySearch(nums, 0, pivotIndex, target);
     }
