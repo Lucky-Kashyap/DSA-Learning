@@ -72,9 +72,22 @@ int main()
     arr.push_back(8);
     arr.push_back(10);
 
+    int target = 0;
+
     int pivotIndex = findPivotIndex(arr);
 
-    cout << "Pivot index of vector : " << pivotIndex << endl;
+    // cout << "Pivot index of vector : " << pivotIndex << endl;
+     int n = nums.size();
+        int ans = -1;
+
+        if(target>nums[0] && target<=nums[pivotIndex]){
+            ans = binarySearch(nums,0,pivotIndex,target);
+        }
+        else{
+            ans = binarySearch(nums,pivotIndex+1,n-1,target);
+        }
+
+        return ans;
 
     return 0;
 }
