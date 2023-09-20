@@ -14,10 +14,14 @@ int removeDuplicate(vector<int> arr)
         }
         else
         {
-            j++;
-            arr[j] = arr[i];
-            i++;
+            arr[++j] = arr[i++];
         }
+        // else
+        // {
+        //     j++;
+        //     arr[j] = arr[i];
+        //     i++;
+        // }
     }
 
     return j + 1;
