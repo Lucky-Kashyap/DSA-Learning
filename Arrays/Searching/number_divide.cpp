@@ -33,9 +33,16 @@ int getQuotient(int divisor, int dividend)
 int main()
 {
     int divisor = 2;
-    int dividend = 20;
+    int dividend = -20;
 
-    int ans = getQuotient(divisor, dividend);
+    // int ans = getQuotient(divisor, dividend);
+    // handle negative case
+    int ans = getQuotient(abs(divisor), abs(dividend));
+
+    if ((divisor > 0 && dividend < 0) || (divisor < 0 && dividend > 0))
+    {
+        ans = 0 - ans;
+    }
 
     cout << "Answer : " << ans << endl;
 
