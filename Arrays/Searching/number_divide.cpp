@@ -2,21 +2,76 @@
 #include <climits>
 
 using namespace std;
-int getQuotient(int divisor, int dividend)
+// int getQuotient(int divisor, int dividend)
+// {
+//     int s = 0;
+//     int e = dividend;
+//     int mid = s + (e - s) / 2;
+//     int ans = -1;
+
+//     while (s <= e)
+//     {
+//         if (mid * divisor == dividend)
+//         {
+//             return mid;
+//         }
+
+//         if (mid * divisor < dividend)
+//         {
+//             ans = mid;
+//             s = mid + 1;
+//         }
+//         else
+//         {
+//             e = mid - 1;
+//         }
+//         mid = s + (e - s) / 2;
+//     }
+
+//     return ans;
+// }
+
+// int main()
+// {
+//     int divisor = 2;
+//     int dividend = -20;
+
+//     // int ans = getQuotient(divisor, dividend);
+//     // handle negative case
+//     int ans = getQuotient(abs(divisor), abs(dividend));
+
+//     if ((divisor > 0 && dividend < 0) || (divisor < 0 && dividend > 0))
+//     {
+//         ans = 0 - ans;
+//     }
+
+//     cout << "Answer : " << ans << endl;
+
+//     return 0;
+// }
+
+#include <iostream>
+#include <vector>
+#include <climits>
+
+using namespace std;
+float getQuotient(float divisor, float dividend)
 {
-    int s = 0;
-    int e = dividend;
-    int mid = s + (e - s) / 2;
-    int ans = -1;
+    float s = 0;
+    float e = dividend;
+    float mid = s + (e - s) / 2;
+    float ans = -1.0;
+    int rem = 0;
 
     while (s <= e)
     {
-        if (mid * divisor == dividend)
+        float chek = mid * divisor + rem;
+        if (chek == dividend)
         {
             return mid;
         }
 
-        if (mid * divisor < dividend)
+        if (chek < dividend)
         {
             ans = mid;
             s = mid + 1;
@@ -33,12 +88,12 @@ int getQuotient(int divisor, int dividend)
 
 int main()
 {
-    int divisor = 2;
-    int dividend = -20;
+    int divisor = 6;
+    int dividend = 26;
 
-    // int ans = getQuotient(divisor, dividend);
-    // handle negative case
-    int ans = getQuotient(abs(divisor), abs(dividend));
+    // int ans = getQuotient(divisor,dividend);
+
+    float ans = getQuotient(abs(divisor), abs(dividend));
 
     if ((divisor > 0 && dividend < 0) || (divisor < 0 && dividend > 0))
     {
