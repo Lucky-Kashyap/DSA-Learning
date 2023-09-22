@@ -24,5 +24,18 @@ int main()
         cout << i << " ";
     }
 
+    // ✅Print Sum of square of first n natural number.
+
+    int sum = 0;
+    // int n = 10;
+    int n;
+    cin >> n;
+    for (int i = 0; i < n; i++)
+    {
+        sum += i * i;
+    }
+
+    cout << sum << endl;
+
     return 0;
 }
