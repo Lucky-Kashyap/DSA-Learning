@@ -37,5 +37,31 @@ int main()
 
     cout << sum << endl;
 
+    // ✅Print Sum of cube of first n natural number
+    int sum = 0;
+    int n = 10;
+    for (int i = 0; i < n; i++)
+    {
+        sum += i * i * i;
+    }
+
+    cout << sum << endl;
+
+    // ✅Print n’th Fibonacci number.
+
+    int previos = 0;
+    int curr = 1;
+
+    cout << previos << " ";
+    cout << curr << " ";
+
+    for (int i = 1; i < 10; i++)
+    {
+        int next = previos + curr;
+        cout << next << " ";
+        previos = curr;
+        curr = next;
+    }
+
     return 0;
 }
