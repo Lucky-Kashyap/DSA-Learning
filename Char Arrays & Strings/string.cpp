@@ -24,7 +24,8 @@ int main()
     string ch;
 
     // cin.getline(ch,100);
-    cin >> ch;
+    // cin >> ch;
+    getline(cin, ch);
 
     printString(ch);
 
