@@ -73,18 +73,22 @@ int main()
     //     cout << "Found" << endl;
     // }
 
-    string str1 = "lucky";
-    //   string str2 = "lucky";
-    string str2 = "Lucky";
+    // string str1 = "lucky";
+    // //   string str2 = "lucky";
+    // string str2 = "Lucky";
 
-    if (str1.compare(str2) == 0)
-    {
-        cout << "Matching" << endl;
-    }
-    else
-    {
-        cout << "not matching " << endl;
-    }
+    // if (str1.compare(str2) == 0)
+    // {
+    //     cout << "Matching" << endl;
+    // }
+    // else
+    // {
+    //     cout << "not matching " << endl;
+    // }
+
+    string str = "this is a car, big daddy of all suvs";
+
+    cout << str.substr(19, 5) << endl;
 
     return 0;
 }
