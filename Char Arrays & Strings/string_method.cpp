@@ -49,15 +49,29 @@ int main()
 
     // cout << "Printing name:  " << name << endl;
 
-    string name = "lucky";
+    // string name = "lucky";
 
-    cout << name << endl;
+    // cout << name << endl;
 
-    name.push_back('R');
-    cout << name << endl;
+    // name.push_back('R');
+    // cout << name << endl;
 
-    name.pop_back();
-    cout << name << endl;
+    // name.pop_back();
+    // cout << name << endl;
+
+    string str1 = "yaar tera super star desi kalakar";
+    // string str2 = "staryyyy";
+    string str2 = "super";
+
+    if (str1.find(str2) == string::npos)
+    {
+        // not found
+        cout << "Not FOund" << endl;
+    }
+    else
+    {
+        cout << "Found" << endl;
+    }
 
     return 0;
 }
