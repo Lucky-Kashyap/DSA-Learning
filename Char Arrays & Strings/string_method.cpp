@@ -59,18 +59,31 @@ int main()
     // name.pop_back();
     // cout << name << endl;
 
-    string str1 = "yaar tera super star desi kalakar";
-    // string str2 = "staryyyy";
-    string str2 = "super";
+    // string str1 = "yaar tera super star desi kalakar";
+    // // string str2 = "staryyyy";
+    // string str2 = "super";
 
-    if (str1.find(str2) == string::npos)
+    // if (str1.find(str2) == string::npos)
+    // {
+    //     // not found
+    //     cout << "Not FOund" << endl;
+    // }
+    // else
+    // {
+    //     cout << "Found" << endl;
+    // }
+
+    string str1 = "lucky";
+    //   string str2 = "lucky";
+    string str2 = "Lucky";
+
+    if (str1.compare(str2) == 0)
     {
-        // not found
-        cout << "Not FOund" << endl;
+        cout << "Matching" << endl;
     }
     else
     {
-        cout << "Found" << endl;
+        cout << "not matching " << endl;
     }
 
     return 0;
