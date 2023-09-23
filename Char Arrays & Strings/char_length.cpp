@@ -4,19 +4,26 @@ using namespace std;
 int getLength(char ch[], int size)
 {
     int len = 0;
+    int i = 0;
 
-    for (int i = 0; i < 20; i++)
+    while (ch[i] != '\0')
     {
-
-        if (ch[i] == '\0')
-        {
-            break;
-        }
-        else
-        {
-            len++;
-        }
+        len++;
+        i++;
     }
+
+    // for (int i = 0; i < 20; i++)
+    // {
+
+    //     if (ch[i] == '\0')
+    //     {
+    //         break;
+    //     }
+    //     else
+    //     {
+    //         len++;
+    //     }
+    // }
 
     return len;
 }
