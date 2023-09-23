@@ -24,19 +24,23 @@ int main()
     // cout << "Front character of string is: " << name.front() << endl;
     // cout << "back character of string is: " << name.back() << endl;
 
-    string str1 = "Lucky";
-    string str2 = "Kashyap";
+    // string str1 = "Lucky";
+    // string str2 = "Kashyap";
 
-    cout << "before appending" << endl;
-    cout << str1 << endl;
-    cout << str2 << endl;
+    // cout << "before appending" << endl;
+    // cout << str1 << endl;
+    // cout << str2 << endl;
 
-    // apend
-    str1.append(str2);
+    // // apend
+    // str1.append(str2);
 
-    cout << "After appending" << endl;
-    cout << str1 << endl;
-    cout << str2 << endl;
+    // cout << "After appending" << endl;
+    // cout << str1 << endl;
+    // cout << str2 << endl;
+
+    string str = "This is a car";
+    str.erase(4, 3);
+    cout << str << endl;
 
     return 0;
 }
