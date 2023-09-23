@@ -11,6 +11,12 @@ void printString(string ch)
         cout << "Index " << i << "    " << ch[i] << endl;
         i++;
     }
+
+    cout << "Printing 10th index value " << ch[10] << endl;
+
+    int res = (int)ch[10];
+
+    cout << "Asscii value of ch[10] is " << res << endl;
 }
 int main()
 {
