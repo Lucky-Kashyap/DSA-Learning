@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <string.h>
 using namespace std;
 int getLength(char ch[], int size)
 {
@@ -25,7 +25,8 @@ int main()
 {
     char ch[20];
 
-    cin >> ch;
+    // cin >> ch;
+    cin.getline(ch, 20);
 
     int count = getLength(ch, 20);
 
@@ -40,6 +41,7 @@ int main()
     //     count++;
     // }
     cout << "print the length ch " << count << endl;
+    cout << "print the length ch " << strlen(ch) << endl;
 
     return 0;
 }
