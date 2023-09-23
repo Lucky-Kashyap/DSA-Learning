@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string.h>
+#include <algorithm>
 using namespace std;
 int getLength(char ch[], int size)
 {
@@ -38,13 +39,16 @@ void reverseString(char ch[], int n)
 
 int main()
 {
-    char ch[20];
+    // char ch[20];
+    string ch;
 
     cin >> ch;
 
-    int count = getLength(ch, 20);
+    // int count = getLength(ch, 20);
 
-    reverseString(ch, count);
+    // reverseString(ch, count);
+    // built in method
+    reverse(ch.begin(), ch.end());
     cout << endl;
     cout << "Original String : " << ch;
 
