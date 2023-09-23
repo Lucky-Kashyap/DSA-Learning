@@ -20,10 +20,20 @@ void reverseString(char ch[], int n)
 {
 
     cout << "Reverse String : ";
-    for (int i = n; i >= 0; i--)
+    // for (int i = n; i >= 0; i--)
+    // {
+    //     cout << ch[i] << " ";
+    // }
+
+    int i = 0;
+    int j = n - 1;
+    while (i <= j)
     {
-        cout << ch[i] << " ";
+        swap(ch[i], ch[j]);
+        i++;
+        j--;
     }
+    cout << ch << endl;
 }
 
 int main()
