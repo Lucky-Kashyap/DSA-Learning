@@ -42,12 +42,22 @@ int main()
     // str.erase(4, 3);
     // cout << str << endl;
 
-    string name = "Lucky kashyap";
-    string middle = "Batham ";
+    // string name = "Lucky kashyap";
+    // string middle = "Batham ";
 
-    name.insert(5, middle);
+    // name.insert(5, middle);
 
-    cout << "Printing name:  " << name << endl;
+    // cout << "Printing name:  " << name << endl;
+
+    string name = "lucky";
+
+    cout << name << endl;
+
+    name.push_back('R');
+    cout << name << endl;
+
+    name.pop_back();
+    cout << name << endl;
 
     return 0;
 }
