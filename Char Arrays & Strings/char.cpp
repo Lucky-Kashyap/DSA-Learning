@@ -22,8 +22,10 @@ int main()
 
     char ch[20];
 
-    cin >> ch;
+    // cin >> ch;
 
+    cin.getline(ch, 100);
+    // why after space not print
     // cout<<ch<<" ";
     cout << "printing the value of ch " << ch << endl;
     return 0;
