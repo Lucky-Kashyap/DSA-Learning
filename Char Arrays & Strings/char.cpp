@@ -15,5 +15,9 @@ int main()
         cout << "At index : " << i << "  " << ch[i] << " " << endl;
     }
 
+    char temp = ch[6];
+    int val = (int)temp;
+
+    cout << "Printing null character asscii value : " << val << endl;
     return 0;
 }
