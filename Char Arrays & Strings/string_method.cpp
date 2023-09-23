@@ -38,9 +38,16 @@ int main()
     // cout << str1 << endl;
     // cout << str2 << endl;
 
-    string str = "This is a car";
-    str.erase(4, 3);
-    cout << str << endl;
+    // string str = "This is a car";
+    // str.erase(4, 3);
+    // cout << str << endl;
+
+    string name = "Lucky kashyap";
+    string middle = "Batham ";
+
+    name.insert(5, middle);
+
+    cout << "Printing name:  " << name << endl;
 
     return 0;
 }
