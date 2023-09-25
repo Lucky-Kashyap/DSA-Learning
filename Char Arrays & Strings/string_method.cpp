@@ -92,9 +92,17 @@ int main()
 
     // inbuilt toupper()
 
-    char ch = 's';
+    // char ch = 's';
 
-    char ch1 = toupper(ch);
+    // char ch1 = toupper(ch);
+
+    // cout << ch1;
+
+    // tolower()
+
+    char ch = 'L';
+
+    char ch1 = tolower(ch);
 
     cout << ch1;
 
