@@ -5,10 +5,14 @@ using namespace std;
 int main()
 {
 
-    char ch[10];
+    int ch[10];
 
-    cout << ch; // nothing print
-    
+    cout << ch; // in case of integer address will be printed
+
+    // char ch[10];
+
+    // cout << ch; // nothing print
+
     // char ch[] = "abcdefghij";
 
     // for (int i = 0; i < 10; i++)
