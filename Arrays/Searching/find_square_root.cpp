@@ -33,13 +33,33 @@ int mySqrt(int x)
     return ans;
 }
 
+
+double myPrecisionSqrt(int n)
+{
+    double sqrt = mySqrt(n);
+    int precision = 4;
+    double step = 0.1;
+    for (int i = 0; i < precision; ++i)
+    {
+        double j = sqrt;
+        while (j * j <= n)
+        {
+            sqrt = j;
+            j += step;
+        }
+        step /= 10;
+    }
+    return sqrt;
+}
+
 int main()
 {
     // vector<int>arr;
 
     int num = 5;
 
-    cout << "Square of a " << num << " : " << mySqrt(num);
+    // cout << "Square root  of a " << num << " : " << mySqrt(num);
+    cout<<"Square root of a "<<num<<" : "<<myPrecisionSqrt(num);
 
     return 0;
 }
