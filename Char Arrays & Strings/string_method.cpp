@@ -86,9 +86,17 @@ int main()
     //     cout << "not matching " << endl;
     // }
 
-    string str = "this is a car, big daddy of all suvs";
+    // string str = "this is a car, big daddy of all suvs";
 
-    cout << str.substr(19, 5) << endl;
+    // cout << str.substr(19, 5) << endl;
+
+    // inbuilt toupper()
+
+    char ch = 's';
+
+    char ch1 = toupper(ch);
+
+    cout << ch1;
 
     return 0;
 }
