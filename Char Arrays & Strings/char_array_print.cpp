@@ -4,10 +4,13 @@ using namespace std;
 
 int main()
 {
+    char ch[10] = {"abcde"};
 
-    int ch[10];
+    cout << ch;
 
-    cout << ch; // in case of integer address will be printed
+    // int ch[10];
+
+    // cout << ch; // in case of integer address will be printed
 
     // char ch[10];
 
