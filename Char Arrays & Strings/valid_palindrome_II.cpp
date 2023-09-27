@@ -49,9 +49,12 @@ int main()
 {
 
     // string str = "abc";
-    string str = "aba";
+    // string str = "aba";
+    string str = "abca";
 
-    cout << "ValidProme II   : " << validPalindrome(str) << endl;
+    bool res = validPalindrome(str);
+    // cout << "ValidProme II   : " << validPalindrome(str) << endl;
+    cout << "ValidProme II   : " << res << endl;
 
     return 0;
 }
