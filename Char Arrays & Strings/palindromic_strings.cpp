@@ -40,7 +40,8 @@ int countSubstrings(string s)
 int main()
 {
 
-    string str = "aaa";
+    // string str = "aaa";
+    string str = "abc";
 
     int res = countSubstrings(str);
 
