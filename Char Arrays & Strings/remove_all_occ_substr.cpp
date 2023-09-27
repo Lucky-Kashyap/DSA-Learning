@@ -5,7 +5,7 @@ using namespace std;
 
 string removeAllOccurrence(string s, string part)
 {
-
+    cout << string::npos << endl;
     while (s.find(part) != string::npos)
     {
         s.erase(s.find(part), part.length());
