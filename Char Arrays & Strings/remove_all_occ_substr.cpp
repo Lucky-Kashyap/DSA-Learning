@@ -20,7 +20,7 @@ int main()
     string str = "daabcbaabcbc";
     string part = "abc";
 
-    cout << "Remove All Ooccurences : " << removeAllOccurrence(str, part) << endl;
+    cout << " Remove All Occurrences of a Substring : " << removeAllOccurrence(str, part) << endl;
 
     return 0;
 }
