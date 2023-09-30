@@ -25,8 +25,27 @@ string decodeMessage(string key, string message)
 
     string ans;
 
-    for (auto ch : message)
+    // for each loop
+
+    // for (auto ch : message)
+    // {
+    //     if (ch == ' ')
+    //     {
+    //         ans.push_back(' ');
+    //     }
+    //     else
+    //     {
+    //         char decodedChar = mapping[ch];
+    //         ans.push_back(decodedChar);
+    //     }
+    // }
+
+    // for loop
+
+    for (int i = 0; i < message.length(); i++)
     {
+        char ch = message[i];
+
         if (ch == ' ')
         {
             ans.push_back(' ');
