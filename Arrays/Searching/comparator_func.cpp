@@ -74,6 +74,14 @@ int main()
         v.push_back(temp);
     }
 
+cout<<"HEre are the values "<<endl;
+
+    print(v);
+
+    cout<<"Sorted by 1st index : "<<endl;
+
+    sort(v.begin(),v.end());
+
     print(v);
 
     return 0;
