@@ -44,8 +44,11 @@ string decodeMessage(string key, string message)
 int main()
 {
 
-    string key = "the quick brown fox jumps over the lazy dog";
-    string message = "vkbs bs t suepuv";
+    // string key = "the quick brown fox jumps over the lazy dog";
+    // string message = "vkbs bs t suepuv";
+
+    string key = "eljuxhpwnyrdgtqkviszcfmabo";
+    string message = "zwx hnfx lqantp mnoeius ycgk vcnjrdb";
 
     cout << decodeMessage(key, message) << endl;
     return 0;
