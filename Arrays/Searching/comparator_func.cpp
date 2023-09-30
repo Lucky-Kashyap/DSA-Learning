@@ -44,6 +44,12 @@ void print(vector<vector<int>> &v)
 //     return a > b;
 // }
 
+bool mycomp(vector<int> &a, vector<int> &b)
+{
+    // return a[0] < b[0];
+    return a[0] > b[0];
+}
+
 int main()
 {
 
@@ -74,13 +80,14 @@ int main()
         v.push_back(temp);
     }
 
-cout<<"HEre are the values "<<endl;
+    cout << "HEre are the values " << endl;
 
     print(v);
 
-    cout<<"Sorted by 1st index : "<<endl;
+    cout << "Sorted by 1st index : " << endl;
 
-    sort(v.begin(),v.end());
+    // sort(v.begin(),v.end());
+    sort(v.begin(), v.end(), mycomp);
 
     print(v);
 
