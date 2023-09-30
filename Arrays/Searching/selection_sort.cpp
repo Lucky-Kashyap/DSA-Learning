@@ -11,6 +11,12 @@ void print(vector<int> v)
     }
 }
 
+void reverseElement(int a, int b)
+{
+    int temp = a;
+    a = b;
+    b = temp;
+}
 void selectionSort(vector<int> &v)
 {
     int n = v.size();
@@ -27,7 +33,8 @@ void selectionSort(vector<int> &v)
             }
         }
 
-        swap(v[i], v[minIndex]);
+        // swap(v[i], v[minIndex]);
+        reverseElement(v[i], v[minIndex]);
     }
 }
 
