@@ -47,7 +47,8 @@ void print(vector<vector<int>> &v)
 bool mycomp(vector<int> &a, vector<int> &b)
 {
     // return a[0] < b[0];
-    return a[0] > b[0];
+    // return a[0] > b[0];
+    return a[1] < b[1];
 }
 
 int main()
