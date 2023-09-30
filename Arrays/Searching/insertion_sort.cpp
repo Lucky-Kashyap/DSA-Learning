@@ -36,7 +36,8 @@ int main()
 {
 
     // vector<int> v = {5, 4, 3, 2, 1};
-    vector<int> v = {0, -12, -34, 23, 45, 23, 10, 98, 231};
+    vector<int> v = {55, 66, 23, 12, 43, 77};
+    // vector<int> v = {0, -12, -34, 23, 45, 23, 10, 98, 231};
 
     insertionSort(v);
 
