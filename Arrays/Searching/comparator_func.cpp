@@ -11,10 +11,18 @@ void print(vector<int> v)
         cout << i << " ";
     }
 }
+// increasing order sorting
+
+// bool mycomp(int &a, int &b)
+// {
+//     return a < b;
+// }
+
+// decreasing order sorting
 
 bool mycomp(int &a, int &b)
 {
-    return a < b;
+    return a > b;
 }
 int main()
 {
